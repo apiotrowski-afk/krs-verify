@@ -32,12 +32,14 @@ Nie obsługiwane: CEIDG (wymaga klucza), GUS REGON (wymaga zatwierdzenia).
 
 ## Instalacja lokalna (Claude Desktop / Claude Code)
 
+Pakiet instaluje się z tego repozytorium GitHub, nie z PyPI (na PyPI go nie publikujemy).
+
 ```json
 {
   "mcpServers": {
     "krs-verify": {
       "command": "uvx",
-      "args": ["krs-verify"]
+      "args": ["--from", "git+https://github.com/apiotrowski-afk/krs-verify", "krs-verify"]
     }
   }
 }
